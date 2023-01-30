@@ -24,3 +24,10 @@
 ```bash
 nix -v --accept-flake-config --show-trace develop
 ```
+
+## Push do Cachix
+
+```bash
+ nix -v --accept-flake-config --show-trace develop --profile conan-dev-profile
+ cachix push tarc conan-dev-profile
+```
